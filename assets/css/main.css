@@ -1,0 +1,1020 @@
+/*MIYN APP SETTINGS PAGE STYLE*/
+img {
+    max-width: 100%;
+}
+.toplevel_page_miyn-app #wpcontent {
+    background-color: #ffffff;
+    padding: 50px;
+}
+.toplevel_page_miyn-app  #wpfooter {
+    background-color: #ffffff;
+    padding: 0 50px 20px;
+}
+#toplevel_page_miyn-app .wp-menu-image img {
+    width: 25px;
+}
+.miyn-app-wrapper {
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    width: calc(100% - 70px);
+    padding: 50px;
+    background-color: #ffffff;
+    box-sizing: content-box;
+}
+.miyn-app-content-wrapper {
+    width: calc(70% - 10px);
+}
+.miyn-app-plugin-banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.edit-banner {
+    margin: 20px;
+    width: 28px;
+}
+.edit-banner a {
+    display: inline-block;
+}
+.miyn-after-banner-title {
+    margin: 30px 0;
+}
+.miyn-after-banner-title h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #2F3A5F;
+    margin: 0;
+}
+.notice-area {
+    background-color: #2DB9EC;
+    padding: 15px 20px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    column-gap: 10px;
+}
+.notice-area.warning {
+    background-color: #f00f00;
+}
+.notice-area .notice-icon {
+    position: relative;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.38);
+    border-radius: 100%;
+    z-index: 1;
+}
+.notice-area .notice-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    z-index: -1;
+}
+.notice-area span {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #ffffff;
+    width: calc(100% - 30px);
+}
+.miyn-app-connected-business-info {
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #D4D4D4;
+}
+.miyn-app-connected-business-info h4 {
+    margin: 0;
+    color: #2F3A5F;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+.business-logo {
+    width: 100px;
+    margin-top: 30px;
+    position: relative;
+}
+.business-logo img {
+    max-width: 100%;
+    height: auto;
+}
+.change-business-logo {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    z-index: 1;
+}
+.change-business-logo a {
+    display: inline-block;
+    line-height: 1;
+    width: 22px;
+    height: 22px;
+}
+.miyn-app-connected-business-details {
+    margin-top: 30px;
+}
+.miyn-app-connected-business-details h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2F3A5F;
+    line-height: 21px;
+    margin: 0 0 15px;
+}
+.miyn-app-connected-business-details p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #7D7D7D;
+    font-weight: 300;
+    margin: 0;
+}
+.miyn-app-connected-business-contacts {
+    margin-top: 20px;
+    column-gap: 20px;
+    display: flex;
+}
+.miyn-app-connected-business-contacts a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2F3A5F;
+    text-decoration: none;
+    display: inline-block;
+}
+.miyn-app-connected-business-contacts a img {
+    margin-right: 5px;
+}
+.generate-key-button {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #2DB9EC;
+    text-decoration: none;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 205px;
+    height: 55px;
+}
+.generate-key-button span {
+    margin-left: 10px;
+}
+.generate-key-button:hover, .generate-key-button:focus {
+    background-color: #2DB9EC;
+    text-decoration: none;
+	outline: none;
+	color: #ffffff;
+}
+.secret-key-form {
+    margin-top: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+.secret-key-form input {
+    font-size: 13px;
+    line-height: 20px;
+    width: calc(100% - 225px);
+    border-radius: 0;
+    border: 1px solid #DFDFDF;
+    padding: 5px 15px;
+    background-color: #ffffff;
+}
+.secret-key-form input:focus {
+	outline: none;
+    border: 1px solid #cccccc;
+    box-shadow: none;
+}
+.secret-key-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #E1E1E1;
+}
+.secret-key-form input::-moz-placeholder { /* Firefox 19+ */
+    color: #E1E1E1;
+}
+.secret-key-form input:-ms-input-placeholder { /* IE 10+ */
+    color: #E1E1E1;
+}
+.secret-key-form input:-moz-placeholder { /* Firefox 18- */
+    color: #E1E1E1;
+}
+.submit-button {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #2DB9EC;
+    border: 1px solid #2DB9EC;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 205px;
+    height: 55px;
+	cursor: pointer;
+}
+.submit-button span {
+    margin-left: 10px;
+}
+.submit-button:focus {
+    border: 1px solid #2DB9EC;
+    outline: none;
+    box-shadow: none;
+}
+.submit-button.disconnect-button {
+    background-color: #DD2E44;
+    border-color: #DD2E44;
+}
+.submit-button.disconnect-button:focus {
+    border: 1px solid #DD2E44;
+    outline: none;
+    box-shadow: none;
+}
+
+
+/*MIYN WIDGETS SETTINGS STYLE*/
+.miyn-widgets-settings-wrapper {
+    position: relative;
+    display: flex;
+    max-width: 70%;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.miyn-widgets-settings-area {
+    /*width: calc(60% - 10px);*/
+    width: 100%;
+    position: relative;
+}
+.widgets-toggle-area {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    position: relative;
+}
+.widgets-toggle-area:not(:nth-child(2)) {
+    margin-top: 20px;
+}
+.widgets-section-titles {
+    position: relative;
+    padding: 15px 15px 15px 50px;
+    border-bottom: 2px solid #e1e1e1;
+    cursor: pointer;
+}
+.widgets-section-titles span {
+	position: relative;
+    font-weight: 500;
+    font-size: 15px;
+    color: #666666;
+}
+.widgets-section-titles span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translate(0, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: #2db9eb;
+    border-radius: 5px;
+}
+.widgets-section-titles span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #ffffff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    z-index: 1;
+    transform: translate(0, -50%);
+}
+.widgets-toggle-area.collapse .widgets-section-titles span::before {
+    border-left: 5px solid #ffffff;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    left: -27px;
+}
+.miyn-widgets-section-contents {
+    padding: 10px;
+    position: relative;
+}
+.miyn-widgets-settings {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+}
+.miyn-widgets-settings label {
+    font-size: 12px;
+    color: #777777;
+}
+.miyn-widgets-settings:not(:first-child) {
+    margin-top: 10px;
+}
+.miyn-widgets-settings-actions input[type="checkbox"] {
+    display: none;
+}
+.miyn-widgets-settings-actions label {
+    position: relative;
+    display: inline-block;
+    line-height: 40px;
+    padding-left: 35px;
+    cursor: pointer;
+}
+.miyn-widgets-settings-actions label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #e1e1e1;
+    transform: translate(0, -50%);
+}
+.miyn-form-properties-toggle-content .miyn-widgets-settings-actions label {
+    padding-left: 0;
+}
+.miyn-form-properties-toggle-content .miyn-widgets-settings-actions label::before {
+    display: none;
+}
+.miyn-form-properties-toggle-content .miyn-widgets-settings-actions.view-second-action label {
+    padding-left: 35px;
+}
+.miyn-form-properties-toggle-content .miyn-widgets-settings-actions.view-second-action label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #e1e1e1;
+    transform: translate(0, -50%);
+}
+.miyn-widgets-settings-actions input[type="checkbox"]:checked + label::before {
+    background-color: #2db9eb;
+}
+.miyn-widgets-settings-actions input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    transform: rotate(45deg);
+    height: 11px;
+    width: 5px;
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    z-index: 1;
+}
+.miyn-widgets-settings-texts {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: wrap row;
+    width: 100%;
+}
+.miyn-widgets-settings-texts fieldset {
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    border-radius: 5px;
+}
+.miyn-widgets-settings-texts fieldset legend {
+    font-size: 13px;
+    color: #666666;
+    padding: 0 5px;
+}
+.miyn-widgets-settings-texts label {
+    min-width: 100px;
+    display: inline-block;
+    margin-top: 7px;
+}
+.miyn-widgets-settings-texts input[type="text"] {
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    font-size: 12px;
+    color: #777777;
+    padding: 5px 10px;
+    min-width: 300px;
+}
+.miyn-widgets-settings-texts input[type="text"]:focus {
+    border: 1px solid #e1e1e1;
+    outline: none;
+    box-shadow: none;
+}
+.miyn-widgets-settings-texts textarea {
+    width: calc(100% - 100px);
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    resize: none;
+    height: 100px;
+}
+.miyn-widgets-settings-texts textarea:focus {
+    border: 1px solid #e1e1e1;
+    outline: none;
+    box-shadow: none;
+}
+.miyn-widgets-layout-area {
+    max-width: 80%;
+    margin: 10px auto 0;
+}
+.miyn-widgets-layout-selects {
+    display: flex;
+    /*justify-content: space-between;*/
+    width: 100%;
+    margin-top: 5px;
+}
+.miyn-widgets-settings-texts label.layout-area-label {
+    font-size: 14px;
+}
+.miyn-widgets-layout-view {
+    width: 150px;
+}
+.miyn-widgets-layout-view:not(:first-child) {
+    margin-left: 20px;
+}
+.miyn-widgets-layout-view input[type="radio"] {
+    display: none;
+}
+.miyn-widgets-settings-texts .miyn-widgets-layout-view label {
+	position: relative;
+    width: 100%;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 33px 10px 10px;
+    justify-content: center;
+    display: flex;
+}
+.miyn-widgets-settings-texts .miyn-widgets-layout-view label span {
+    position: absolute;
+    height: 25px;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    padding-left: 35px;
+    font-size: 12px;
+    color: #212529;
+    align-items: center;
+}
+.miyn-widgets-settings-texts .miyn-widgets-layout-view label span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #e1e1e1;
+    transform: translate(0, -50%);
+    border-radius: 100%;
+}
+.miyn-widgets-layout-view input[type="radio"]:checked + label span::before {
+    background-color: #2db9eb;
+}
+.miyn-widgets-layout-view input[type="radio"]:checked + label span::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    transform: rotate(45deg);
+    height: 8px;
+    width: 3px;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    z-index: 1;
+}
+.miyn-widgets-layout-view label img {
+    margin-top: 10px;
+}
+.business-logo-upload {
+	border: 1px solid #e1e1e1;
+    width: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px auto;
+}
+.business-logo-upload img {
+    max-width: 100%;
+}
+.logo-upload {
+    margin-top: 15px;
+}
+.logo-upload button {
+    background-color: #2db9eb;
+    border: 1px solid #2db9eb;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.logo-upload button:focus {
+    border: 1px solid #2db9eb;
+    outline: none;
+    box-shadow: none;
+}
+.logo-upload p {
+    margin: 0;
+    font-size: 12px;
+    color: #666666;
+}
+.miyn-widgets-settings-area .page-bar {
+    display: flex;
+    flex-flow: wrap row;
+    margin-top: 15px;
+}
+.miyn-widgets-settings-area .page-bar button {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #2DB9EC;
+    border: 1px solid #2DB9EC;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    height: 50px;
+    min-width: 150px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.upload-business-log .logo-upload .widgetimage-button {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #2DB9EC;
+    border: 1px solid #2DB9EC;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    height: 50px;
+    min-width: 150px;
+    cursor: pointer;
+}
+.upload-business-log .logo-upload label.widgetimage-button {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 3px;
+}
+.upload-business-log .logo-upload .miyn-bt {
+    display: none;
+}
+.upload-business-log .logo-upload #widgetimage {
+    display: none;
+}
+.miyn-widgets-settings-texts .cke_editor_ck_content {
+    width: calc(100% - 105px);
+}
+.connection-intruction img {
+    max-width: 100%;
+}
+.show-notice {
+    width: 100%;
+    color: #2DB9EC;
+}
+.miyn-widgets-settings-texts .ck.ck-editor {
+    width: 100%;
+}
+@media screen and (max-width: 767px) {
+    .miyn-widgets-settings-wrapper {
+        max-width: 100%;
+    }
+}
+
+/*PROFILE SETTINGS PAGE STYLE*/
+.business-info-area {
+    width: 100%;
+}
+.admin-color-miyn #wpwrap {
+    background-color: #ffffff;
+}
+.admin-color-miyn #wpcontent {
+    padding: 50px;
+}
+.business-info-area {
+    margin-top: 50px;
+}
+.business-info-area h2 {
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 600;
+    color: #2DB9EC;
+    margin: 0;
+}
+.business-defailt-form {
+    margin-top: 20px;
+}
+.miyn-app-profile-settings-field:not(:first-child) {
+    margin-top: 15px;
+}
+.miyn-app-business-assets-area {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: thin solid #D4D4D4;
+}
+.miyn-app-business-assets-area .miyn-app-profile-settings-field {
+    width: calc(50% - 25px);
+    margin-top: 0;
+}
+.miyn-app-business-assets-area .miyn-app-profile-settings-field > label {
+    font-size: 15px;
+    line-height: 23px;
+    color: #2DB9EC;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.miyn-app-business-assets-area .miyn-app-profile-settings-field > label span {
+    font-size: 12px;
+    font-weight: 400;
+}
+.miyn-app-business-assets-area .miyn-app-profile-settings-field p {
+    font-size: 15px;
+    margin: 0;
+    color: #2F3A5F;
+    font-weight: 400;
+}
+.miyn-app-business-assets-area .miyn-app-profile-settings-field p:nth-child(3) {
+    font-size: 12px;
+    line-height: 18px;
+    font-style: italic;
+}
+.miyn-app-profile-settings-field label {
+    font-size: 14px;
+    line-height: 21px;
+    color: #2F3A5F;
+    display: block;
+    cursor: initial;
+}
+.miyn-app-profile-settings-field .miyn-app-profile-settings-checkbox-field label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.miyn-app-profile-settings-field .miyn-app-profile-settings-checkbox-field label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #2DB9EC;
+}
+.miyn-app-profile-settings-field .miyn-app-profile-settings-checkbox-field input[type="checkbox"]:checked+label::after {
+    content: "\2713";
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    color: #ffffff;
+}
+.miyn-app-profile-settings-field .miyn-app-profile-settings-checkbox-field input[type="checkbox"] {
+    display: none;
+}
+.miyn-app-profile-settings-checkbox-field {
+    margin-bottom: 15px;
+}
+.miyn-app-profile-settings-field input:not([type="checkbox"]), .miyn-app-profile-settings-field textarea, .miyn-app-profile-settings-field select {
+    border: 1px solid #DFDFDF;
+    background-color: #ffffff;
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
+    font-size: 12px;
+    color: #333333;
+    box-shadow: none;
+    padding: 7px 10px;
+    margin-top: 10px;
+}
+.miyn-app-profile-settings-field textarea {
+    height: 95px;
+}
+.miyn-app-profile-settings-field input::-webkit-input-placeholder { /* Edge */
+    color: #C5C5C5;
+    font-size: 10px;
+}
+
+.miyn-app-profile-settings-field input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #C5C5C5;
+    font-size: 10px;
+}
+
+.miyn-app-profile-settings-field input::placeholder {
+    color: #C5C5C5;
+    font-size: 10px;
+}
+.miyn-app-profile-settings-field textarea::-webkit-input-placeholder { /* Edge */
+    color: #C5C5C5;
+    font-size: 10px;
+}
+
+.miyn-app-profile-settings-field textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #C5C5C5;
+    font-size: 10px;
+}
+
+.miyn-app-profile-settings-field textarea::placeholder {
+    color: #C5C5C5;
+    font-size: 10px;
+}
+/*.wp-admin .miyn-app-profile-settings-field input[type=file] {
+    width: auto;
+}*/
+.miyn-app-profile-settings-field .miyn-app-file-upload-field label {
+    background-color: #F7F8FC;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: thin dashed #D9D9D9;
+    font-size: 10px;
+    color: #34495E;
+    line-height: 16px;
+    /*margin-top: 20px;*/
+    cursor: pointer;
+}
+.miyn-app-file-upload-field img {
+    margin-top: auto;
+}
+.miyn-app-file-upload-field span {
+    display: block;
+    width: 100%;
+    margin-bottom: auto;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+/*.miyn-app-profile-settings-field .miyn-app-file-upload-field label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 35px;
+    height: 24px;
+    background-image: url(../img/cloud-upload.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}*/
+.miyn-app-file-upload-field input[type="file"] {
+    display: none;
+}
+.miyn-app-two-column-fields {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.miyn-app-two-column-fields .miyn-app-file-upload-field {
+    width: calc(50% - 10px);
+}
+.miyn-app-two-column-fields .miyn-app-profile-settings-field {
+    width: calc(50% - 10px);
+}
+.miyn-app-two-column-fields .miyn-app-profile-settings-field:not(:first-child) {
+    margin-top: 0;
+}
+.miyn-app-business-assets-area .miyn-app-two-column-fields .miyn-app-file-upload-field.miyn-app-profile-settings-field {
+    background-color: transparent;
+    padding: 0;
+}
+.miyn-app-business-assets-area .miyn-app-two-column-fields .miyn-app-profile-settings-field {
+    background-color: #F7F8FC;
+    display: flex;
+    align-items: flex-end;
+    flex-flow: wrap row;
+    padding: 15px;
+}
+.miyn-app-business-assets-area .miyn-app-two-column-fields .miyn-app-profile-settings-field.miyn-app-profile-brand-color {
+    height: 130px;
+}
+.miyn-app-business-assets-area .miyn-app-profile-settings-field:first-child .miyn-app-file-upload-field {
+    margin-top: 23px;
+}
+.miyn-app-client-portal-area {
+    margin-top: 20px;
+}
+.miyn-app-client-portal-area .miyn-app-profile-settings-field > label {
+    font-size: 15px;
+    line-height: 23px;
+    color: #2DB9EC;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.miyn-app-client-portal-area .miyn-app-profile-settings-field > label span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.miyn-app-client-portal-area p {
+    margin: 0;
+}
+.miyn-app-client-portal-area .miyn-app-profile-settings-field p:nth-child(3) {
+    font-size: 12px;
+    line-height: 18px;
+    font-style: italic;
+}
+.miyn-app-client-portal-area .miyn-app-file-upload-field {
+    margin-top: 15px;
+}
+.miyn-app-profile-settings-client-info {
+    margin-top: 20px;
+}
+.miyn-app-profile-settings-client-info > label {
+    font-size: 15px;
+    line-height: 23px;
+    color: #2DB9EC;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.business-defailt-form .page-bar {
+    margin-top: 20px;
+}
+.miyn-bt {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #2DB9EC;
+    border: 1px solid #2DB9EC;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    height: 50px;
+    min-width: 150px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.preview-image {
+    position: relative;
+    max-width: 150px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    line-height: 0;
+}
+.preview-image .remove-preview {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+    text-decoration: none;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border-radius: 100%;
+}
+.preview-image img {
+    border: thin dashed #D9D9D9;
+    max-width: 100%;
+}
+.miyn-app-profile-settings-social-link {
+    margin-top: 20px;
+}
+.miyn-app-profile-settings-social-link > label {
+    font-size: 15px;
+    line-height: 23px;
+    color: #2DB9EC;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.miyn-bt[disabled="true"] {
+    /* opacity: 0.8; */
+    background-color: #e3e3e3;
+    color: #777777;
+}
+@media screen and (max-width: 1075px) {
+    .miyn-app-business-assets-area .miyn-app-profile-settings-field {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .miyn-app-content-wrapper {
+        width: 100%;
+    }
+}
+
+
+/*SHORTCODE PAGE STYLE*/
+.miyn-app-page-title {
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 600;
+    color: #2DB9EC;
+    margin: 0;
+}
+.miyn-content-area-wrapper {
+    position: relative;
+    display: flex;
+    max-width: 70%;
+    width: 100%;
+    justify-content: space-between;
+    flex-flow: wrap row;
+}
+.shortcode-details {
+    width: 100%;
+    margin-top: 30px;
+}
+.miyn-content-area-wrapper table {
+    margin-top: 30px;
+}
+.miyn-content-area-wrapper table tr th {
+    color: #2F3A5F;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    padding: 5px;
+}
+.miyn-content-area-wrapper table tr td {
+    padding: 5px;
+}
+.miyn-content-area-wrapper p, .miyn-content-area-wrapper table tr td {
+    font-size: 12px;
+    line-height: 20px;
+    color: #7D7D7D;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+}
+
+/*TOOLS PAGE STYLE*/
+.miyn-exclude-pages .miyn-app-profile-settings-field label {
+    font-size: 15px;
+    font-weight: 500;
+}
+.miyn-exclude-pages p {
+    font-size: 14px;
+    color: #555555;
+}
+#exclude-ids::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #555555;
+    font-size: 13px;
+}
+#exclude-ids::-moz-placeholder { /* Firefox 19+ */
+    color: #555555;
+    font-size: 13px;
+    font-weight: 300;
+}
+#exclude-ids:-ms-input-placeholder { /* IE 10+ */
+    color: #555555;
+    font-size: 13px;
+    font-weight: 300;
+}
+#exclude-ids:-moz-placeholder { /* Firefox 18- */
+    color: #555555;
+    font-size: 14px;
+    font-weight: 300;
+}
